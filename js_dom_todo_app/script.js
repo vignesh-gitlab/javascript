@@ -18,7 +18,7 @@ $todoText.addEventListener('keypress',(e)=>{
     }
 });
 
-$todoList.addEventListener('click',(e)=>{
+$todoList.addEventListener('click',(e)=>{ // Using Event Bubbling technique to trigger child element using parent element
     if(e.target.checked){
         e.target.parentElement.classList.add('checked');
         //e.target.parentElement.style.textDecoration = 'line-through';
