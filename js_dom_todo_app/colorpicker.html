@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Picker for Background</title>
 </head>
 <body>
     <select id="selectColor">
@@ -16,12 +16,9 @@
     <script>
         $selectColor = document.querySelector('#selectColor');
         $selectColor.addEventListener('change',(e)=>{
-            if(e.target.value == "Red"){
-                document.body.style.backgroundColor ="Red";
-            } else if(e.target.value == "Green"){
-                document.body.style.backgroundColor ="Green";
-            } else if(e.target.value == "Blue"){
-                document.body.style.backgroundColor ="Blue";
+            console.log(e.target);
+            if(e.target.value !== 'Select Color'){
+                document.body.style.backgroundColor =selectColor.value;
             } else {
                 document.body.style.backgroundColor ="White";
             }

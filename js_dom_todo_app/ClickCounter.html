@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+<body>
+    <button id="btnClick">Click</button>
+    <p id="displayCount"></p>
+    
+    <script>
+        $btnClick = document.querySelector('#btnClick');
+        $displayCount = document.querySelector('#displayCount');
+        var count = 0;
+        $btnClick.addEventListener('click',(e)=>{
+            count++;
+            $displayCount.textContent = count;
+        });
+    </script>
+</body>
+</html>
