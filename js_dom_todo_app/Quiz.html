@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+<p>What is 2 + 2?</p>
+<button class="answer">3</button>
+<button class="answer">4</button>
+<button class="answer">5</button>
+<p id="result"></p>
+<script>
+  const answers = document.querySelectorAll(".answer");
+  const result = document.getElementById("result");
+
+  answers.forEach(btn => {
+    btn.addEventListener("click", function() {
+      if (btn.textContent === "4") {
+        result.textContent = "✅ Correct!";
+      } else {
+        result.textContent = "❌ Try again!";
+      }
+    });
+  });
+</script>
+
+    
+</body>
+</html>
