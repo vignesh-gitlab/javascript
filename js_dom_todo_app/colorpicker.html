@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="selectColor">
+        <option>Select Color</option>
+        <option id="red">Red</option>
+        <option id="green">Green</option>
+        <option id="blue">Blue</option>
+    </select>
+
+    <script>
+        $selectColor = document.querySelector('#selectColor');
+        $selectColor.addEventListener('change',(e)=>{
+            if(e.target.value == "Red"){
+                document.body.style.backgroundColor ="Red";
+            } else if(e.target.value == "Green"){
+                document.body.style.backgroundColor ="Green";
+            } else if(e.target.value == "Blue"){
+                document.body.style.backgroundColor ="Blue";
+            } else {
+                document.body.style.backgroundColor ="White";
+            }
+        })
+    </script>
+</body>
+</html>

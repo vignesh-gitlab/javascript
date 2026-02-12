@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <style>
+        #container{
+            width:33vw;
+            margin: 4rem auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #todoText{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            font-size: 30px;
+        }
+        input[type="checkbox"]{
+            zoom:2;
+        }
+        .checked{
+            text-decoration: line-through;
+            color: lawngreen;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="todoText" placeholder="Enter your text">
+        <uL id="todoList">          
+        </uL>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
